@@ -1,0 +1,8 @@
+{
+    "cities":{
+        "delhi":"38'c",
+        "mumbai":"33'c",
+        "pune":"39'c",
+        "kashmir":"10'c"
+    }
+}

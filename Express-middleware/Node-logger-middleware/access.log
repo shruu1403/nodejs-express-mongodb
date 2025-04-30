@@ -1,0 +1,38 @@
+GET 304 - 4.698 ms Thu, 09 Mar 2023 15:46:54 GMT 1.1 /get-users 
+
+GET 304 - 1.446 ms Thu, 09 Mar 2023 15:46:54 GMT 1.1 /get-users 
+
+GET 304 - 0.466 ms Thu, 09 Mar 2023 15:46:54 GMT 1.1 /get-users 
+
+GET 304 - 5.153 ms Thu, 09 Mar 2023 15:47:30 GMT 1.1 /get-users 
+
+GET 304 - 1.250 ms Thu, 09 Mar 2023 15:47:30 GMT 1.1 /get-users 
+
+GET 304 - 1.253 ms Thu, 09 Mar 2023 15:47:31 GMT 1.1 /get-users 
+
+GET 304 - 0.615 ms Thu, 09 Mar 2023 15:47:31 GMT 1.1 /get-users 
+
+GET 304 - 0.731 ms Thu, 09 Mar 2023 15:47:34 GMT 1.1 /get-users 
+
+GET 304 - 0.392 ms Thu, 09 Mar 2023 15:47:34 GMT 1.1 /get-users 
+
+GET 200 31 1.987 ms Mon, 28 Apr 2025 12:12:34 GMT 1.1 /
+
+GET 200 43 2.364 ms Mon, 28 Apr 2025 12:12:34 GMT 1.1 /get-users
+
+POST 201 37 0.550 ms Mon, 28 Apr 2025 12:12:34 GMT 1.1 /add-user
+
+DELETE 200 43 0.727 ms Mon, 28 Apr 2025 12:12:34 GMT 1.1 /user/123
+
+PUT 201 43 0.477 ms Mon, 28 Apr 2025 12:12:34 GMT 1.1 /user/142
+
+GET 200 31 1.888 ms Mon, 28 Apr 2025 12:13:20 GMT 1.1 /
+
+GET 200 43 0.495 ms Mon, 28 Apr 2025 12:13:20 GMT 1.1 /get-users
+
+POST 201 37 0.346 ms Mon, 28 Apr 2025 12:13:21 GMT 1.1 /add-user
+
+DELETE 200 43 0.607 ms Mon, 28 Apr 2025 12:13:21 GMT 1.1 /user/123
+
+PUT 201 43 0.345 ms Mon, 28 Apr 2025 12:13:21 GMT 1.1 /user/142
+
