@@ -18,7 +18,7 @@ const options = {
         },
         servers: [
             {
-                url: "http://localhost:8080",
+                url: "https://blog-app-lokh.onrender.com/",
             },
         ],
         components: {
@@ -44,8 +44,7 @@ const swaggerSpec=swaggerJSdoc(options)
 app.use("/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 
 app.use(cors({
-    origin: "http://localhost:3000",
-    credentials: true
+    origin: "*"
 }));
 app.use(express.json())
 app.use("/user",userRouter)

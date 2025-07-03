@@ -1,7 +1,7 @@
 export const submitUserDetails=async(payload)=>{
     const data=JSON.stringify(payload)
     try {
-        const response=await fetch("http://localhost:8080/user/register",{
+        const response=await fetch("https://blog-app-lokh.onrender.com/user/register",{
             method:"POST",
             body:data,
             headers:{

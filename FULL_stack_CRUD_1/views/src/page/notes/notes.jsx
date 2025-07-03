@@ -13,7 +13,7 @@ const Notes = () => {
 
   const getNotes = async () => {
     try {
-      let response = await fetch("http://localhost:8080/note", {
+      let response = await fetch("https://blog-app-lokh.onrender.com/note", {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -36,7 +36,7 @@ const Notes = () => {
     if (noteDetails) {
       const data = JSON.stringify(noteDetails);
       try {
-        const response = await fetch("http://localhost:8080/note/create", {
+        const response = await fetch("https://blog-app-lokh.onrender.com/note/create", {
           method: "POST",
           body: data,
           headers: {
@@ -64,7 +64,7 @@ const Notes = () => {
       const data = JSON.stringify(note);
       try {
         const response = await fetch(
-          `http://localhost:8080/note/update/${id}`,
+          `https://blog-app-lokh.onrender.com/note/update/${id}`,
           {
             method: "PATCH",
             body: data,
@@ -92,7 +92,7 @@ const Notes = () => {
 
   const deleteNotes = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8080/note/delete/${id}`, {
+      const response = await fetch(`https://blog-app-lokh.onrender.com/note/delete/${id}`, {
         method: "DELETE",
         headers: {
           authorization: `Bearer ${localStorage.getItem("token")}`,

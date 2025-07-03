@@ -1,7 +1,7 @@
 export const loginUser=async(payload)=>{
     const data=JSON.stringify(payload)
     try {
-        const response=await fetch("http://localhost:8080/user/login",{
+        const response=await fetch("https://blog-app-lokh.onrender.com/user/login",{
             method:"POST",
             body:data,
             headers:{
