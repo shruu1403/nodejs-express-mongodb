@@ -44,7 +44,7 @@ const swaggerSpec=swaggerJSdoc(options)
 app.use("/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 
 app.use(cors({
-    origin: "https://fullstack-blogging.netlify.app/",
+    origin: "https://fullstack-blogging.netlify.app",
     credentials: false
 }));
 app.use(express.json())
