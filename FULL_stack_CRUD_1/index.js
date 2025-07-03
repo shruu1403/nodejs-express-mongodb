@@ -10,7 +10,7 @@ const swaggerUi=require("swagger-ui-express");
 const cors=require("cors")
 
 app.use(cors({
-    origin: "https://fullstack-blogging.netlify.app",
+    origin:[ "https://fullstack-blogging.netlify.app", "*"],
     credentials: false
 }));
 
