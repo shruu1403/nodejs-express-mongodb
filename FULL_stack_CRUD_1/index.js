@@ -18,7 +18,7 @@ const options = {
         },
         servers: [
             {
-                url: "https://blog-app-lokh.onrender.com/",
+                url: "https://blog-app-lokh.onrender.com",
             },
         ],
         components: {
