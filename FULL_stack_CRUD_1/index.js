@@ -9,6 +9,11 @@ const swaggerJSdoc=require("swagger-jsdoc");
 const swaggerUi=require("swagger-ui-express");
 const cors=require("cors")
 
+app.use(cors({
+    origin: "https://fullstack-blogging.netlify.app",
+    credentials: false
+}));
+
 const options = {
     definition: {
         openapi: "3.0.0",
@@ -43,10 +48,7 @@ const options = {
 const swaggerSpec=swaggerJSdoc(options)
 app.use("/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerSpec))
 
-app.use(cors({
-    origin: "https://fullstack-blogging.netlify.app",
-    credentials: false
-}));
+
 app.use(express.json())
 app.use("/user",userRouter)
 app.use("/note",noteRouter)
